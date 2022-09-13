@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+	<title>Etusivu</title>
+	<link rel="stylesheet" href="etusivu.css">
+</head>
+<body>
+	<ul>
+		<li><img src="kuvat/amispadel_logo.png"></li>
+		<li><a class="active" href="#home">Etusivu</a></li>
+		<li><a href="#news">Uutiset</a></li>
+		<li><a href="#contact">Ilmoittautuminen</a></li>
+	</ul>
+
+	<div class="hero-image">
+		<div class="hero-text">
+		  <h1 style="font-size:50px">Amis padel</h1>
+		  <p>Amis padel</p>
+		</div>
+	  </div>
+
+	  <p>
+		Duis viverra porttitor pharetra. Phasellus auctor tristique est, at efficitur turpis porta quis. Phasellus id
+		elit a metus porta auctor. Donec rutrum vel mauris vulputate fermentum. Aliquam erat volutpat. Donec gravida
+		convallis lectus ut ullamcorper. Quisque euismod enim a purus lobortis bibendum. Aliquam consequat condimentum
+		consequat. Fusce sit amet imperdiet mi. Suspendisse at metus massa. Sed auctor bibendum dolor et aliquam. Nam mi
+		purus, laoreet sit amet mattis eu, egestas id ipsum. Mauris fermentum efficitur justo, nec iaculis justo tempus
+		ac.
+	  </p>
+	  <p>
+		Donec elementum fringilla odio, a vestibulum magna dignissim eu. In porta purus ut sapien pulvinar, quis tempor
+		est efficitur. In malesuada dui eget erat congue lacinia et in nisi. Praesent sollicitudin nulla mauris, quis
+		gravida augue volutpat at. Nullam tempor eu purus at condimentum. Fusce consequat sagittis orci. Etiam vulputate
+		et nulla sit amet venenatis. Fusce cursus, libero at dictum hendrerit, dui dolor feugiat ligula, vel imperdiet
+		eros arcu posuere mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+		Vivamus placerat luctus elit, sit amet volutpat purus condimentum at. Nunc ac orci erat. Fusce non tellus erat.
+	  </p>
+	  <p>
+		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi consectetur,
+		libero vel congue tincidunt, tellus est interdum dui, faucibus finibus ante nunc vitae nulla. Nullam placerat ut
+		ex ut eleifend. Curabitur aliquam, odio et condimentum consectetur, ligula tortor molestie risus, vehicula
+		sollicitudin ligula lorem eu velit. Aenean feugiat lorem vel tincidunt pretium. Duis eu venenatis lectus.
+		Praesent convallis congue tellus in commodo. Nulla luctus risus nibh, nec accumsan libero vestibulum vitae. Nam
+		luctus laoreet nunc, eu elementum ligula suscipit eget. Phasellus fringilla, erat ac malesuada blandit, velit
+		lorem interdum turpis, a volutpat velit massa id tellus. Donec sodales metus sit amet arcu euismod, sit amet
+		accumsan erat semper. Nam sagittis purus sed venenatis mollis.
+	  </p>
+
+	  <p>Paina nappeja:</p>
+	  
+	  <div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Peruskurssi')">Peruskurssi</button>
+		<button class="tablinks" onclick="openTab(event, 'Harrastejaosto')">Harrastejaosto</button>
+		<button class="tablinks" onclick="openTab(event, 'Kilpajaosto')">Kilpajaosto</button>
+	  </div>
+	  
+	  <div id="Peruskurssi" class="tabcontent">
+		<h3>Peruskurssi</h3>
+		<p>Praesent convallis congue tellus in commodo.</p>
+	  </div>
+	  
+	  <div id="Harrastejaosto" class="tabcontent">
+		<h3>Harrastejaosto</h3>
+		<p>Donec sodales metus sit amet arcu euismod, sit amet accumsan erat semper.</p> 
+	  </div>
+	  
+	  <div id="Kilpajaosto" class="tabcontent">
+		<h3>Kilpajaosto</h3>
+		<p>Quisque euismod enim a purus lobortis bibendum.</p>
+	  </div>
+	  
+	  <script>
+	  function openTab(evt, tabName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+		  tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+		  tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " active";
+	  }
+	  </script>
+	  <br><br>
+
+	  <div class="row">
+		<div class="column">
+		  <div class="card">
+			<img src="kuvat/opettaja.jpg" alt="Opettaja" style="width:100%">
+			<div class="container">
+			  <h2>Heikki Soininen</h2>
+			  <p class="title">Opettaja</p>
+			  <p>Curabitur aliquam, odio et condimentum consectetur, ligula tortor molestie risus, vehicula
+				sollicitudin ligula lorem eu velit.</p>
+			</div>
+		  </div>
+		</div>
+	  
+		<div class="column">
+		  <div class="card">
+			<img src="kuvat/harrastejaosto_ohjaaja.png" alt="Harrastejaosto ohjaaja" style="width:100%">
+			<div class="container">
+			  <h2>Samppa Ahonen</h2>
+			  <p class="title">Harrastejaoston ohjaaja</p>
+			  <p>Donec gravida
+				convallis lectus ut ullamcorper.</p>
+			</div>
+		  </div>
+		</div>
+	  
+		<div class="column">
+		  <div class="card">
+			<img src="kuvat/kilpailujaosto_valmentaja.png" alt="Kilpailujaosto valmentaja" style="width:100%">
+			<div class="container">
+			  <h2>Kim Huovi</h2>
+			  <p class="title">Kilpailujaoston valmentaja</p>
+			  <p>Nullam tempor eu purus at condimentum. Fusce consequat sagittis orci. Etiam vulputate
+				et nulla sit amet venenatis.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+</body>
+</html>
